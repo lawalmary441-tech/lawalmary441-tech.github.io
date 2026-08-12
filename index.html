@@ -3,314 +3,534 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Lawal Mary Motunrayo | Data Analyst</title>
-
+    <title>Lawal Mary Motunrayo | Data Analyst Portfolio</title>
     <meta name="description" content="Portfolio of Lawal Mary Motunrayo, Data Analyst specializing in SQL, Excel, Power BI and Python.">
 
+    <!-- DM Sans & Fallback Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
+    <!-- Header / Navigation -->
     <header>
         <nav>
-            <a href="#home" class="logo">Mary.</a>
+            <a href="#home" class="logo">
+                Mary<span>.</span>
+            </a>
 
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
             </div>
+
+            <div class="nav-cta">
+                <a href="Lawal%20Mary%20Data%20Analyst%20CV.pdf" target="_blank" class="btn btn-primary nav-btn">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume / CV
+                </a>
+            </div>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
 
-
-    <!-- Hero Section -->
+    <!-- Main Content -->
     <main>
 
+        <!-- Hero Section -->
         <section id="home" class="hero">
+            <div class="container hero-grid">
+                
+                <div class="hero-content fade-in">
+                    <div class="badge-status">
+                        <span class="pulse-dot"></span>
+                        Available for Data Analyst Roles
+                    </div>
 
-            <div class="hero-content">
+                    <h1>
+                        Lawal Mary <br>
+                        <span class="highlight">Motunrayo</span>
+                    </h1>
 
-                <p class="intro">HELLO, I'M</p>
+                    <div class="hero-role">
+                        Data Analyst & Insights Specialist
+                    </div>
 
-                <h1>Lawal Mary<br>Motunrayo</h1>
+                    <p class="hero-text">
+                        I transform raw datasets into clear executive dashboards, actionable business strategies, 
+                        and meaningful insights to support data-driven decision making.
+                    </p>
 
-                <h2>Data Analyst</h2>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Projects <i class="fa-solid fa-arrow-right"></i>
+                        </a>
 
-                <p class="hero-text">
-                    I turn raw data into meaningful insights that support
-                    better decisions and solve real-world problems.
-                </p>
+                        <a href="#contact" class="btn btn-secondary">
+                            Let's Connect
+                        </a>
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">
-                        View My Projects
-                    </a>
+                        <a href="Lawal%20Mary%20Data%20Analyst%20CV.pdf" target="_blank" class="btn btn-outline">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> View CV
+                        </a>
+                    </div>
+                </div>
 
-                    <a href="#contact" class="btn secondary-btn">
-                        Let's Connect
-                    </a>
+                <!-- Hero Interactive Analytics Card Widget -->
+                <div class="hero-visual fade-in">
+                    <div class="analytics-card">
+                        <div class="card-header-row">
+                            <div class="card-title-group">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div class="card-title-text">
+                                    <h4>Analytics Metrics</h4>
+                                    <p>Live Portfolio Summary</p>
+                                </div>
+                            </div>
+                            <span class="live-tag">Active</span>
+                        </div>
 
-                    <a href="Lawal%20Mary%20Data%20Analyst%20CV.pdf"
-                        target="_blank">View My CV</a>
+                        <div class="stats-mini-grid">
+                            <div class="mini-stat-box">
+                                <span class="number">5+</span>
+                                <span class="label">Featured Projects</span>
+                            </div>
+                            <div class="mini-stat-box">
+                                <span class="number">4</span>
+                                <span class="label">Analytics Tools</span>
+                            </div>
+                        </div>
+
+                        <div class="chart-mockup">
+                            <div class="chart-header">
+                                <span>Sales Trends Insight</span>
+                                <span style="color: var(--emerald);"><i class="fa-solid fa-arrow-trend-up"></i> +24.8%</span>
+                            </div>
+                            <svg class="svg-chart" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.35"/>
+                                        <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M0 65 Q 45 40, 90 55 T 180 25 T 270 30 T 300 10 L 300 80 L 0 80 Z" fill="url(#chartGradient)"/>
+                                <path d="M0 65 Q 45 40, 90 55 T 180 25 T 270 30 T 300 10" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="180" cy="25" r="4" fill="#2563eb"/>
+                                <circle cx="300" cy="10" r="4" fill="#0ea5e9"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-
-            <div class="hero-visual">
-                <div class="data-card">
-                    <span>DATA</span>
-                    <strong>→ INSIGHTS</strong>
-                </div>
-            </div>
-
         </section>
-
 
         <!-- About Section -->
-        <section id="about" class="section">
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-label">
+                    <i class="fa-solid fa-user-gear"></i> ABOUT ME
+                </div>
+                
+                <h2 class="section-title">
+                    Turning complex data into business clarity.
+                </h2>
 
-            <p class="section-label">ABOUT ME</p>
+                <div class="about-grid fade-in">
+                    <div class="about-paragraphs">
+                        <p>
+                            I am a detail-oriented <strong>Data Analyst</strong> passionate about discovering hidden patterns within data 
+                            and converting complex figures into intuitive, impactful visual narratives. I specialize in working with 
+                            <strong>SQL, Microsoft Excel, Power BI, and Python</strong> to clean, query, model, and visualize datasets.
+                        </p>
+                        <p>
+                            Alongside my data analytics focus, my studies in <strong>Human Nutrition & Dietetics</strong> have honed my analytical rigor, 
+                            structured problem-solving skills, and deep attention to research methodology. This unique perspective allows me to 
+                            approach business problems with thoroughness and critical clarity.
+                        </p>
+                    </div>
 
-            <h2>Turning data into something useful.</h2>
+                    <div class="about-stats-container">
+                        <div class="stat-card">
+                            <div class="icon"><i class="fa-solid fa-folder-closed"></i></div>
+                            <span class="val">5+</span>
+                            <span class="title">Completed Projects</span>
+                        </div>
 
-            <p class="about-text">
-                I'm a Data Analyst passionate about transforming raw data
-                into meaningful insights that support better decision-making.
-                I work with SQL, Microsoft Excel, Power BI and Python to
-                clean, analyze, visualize and communicate data effectively.
-            </p>
+                        <div class="stat-card">
+                            <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <span class="val">4</span>
+                            <span class="title">Core Technical Tools</span>
+                        </div>
 
-            <p class="about-text">
-                Alongside my analytics journey, I'm studying Human Nutrition
-                & Dietetics, giving me a unique perspective on using data to
-                understand problems and uncover insights across different
-                domains.
-            </p>
+                        <div class="stat-card">
+                            <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <span class="val">Dual</span>
+                            <span class="title">Domain Knowledge</span>
+                        </div>
 
+                        <div class="stat-card">
+                            <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                            <span class="val">100%</span>
+                            <span class="title">Data-Driven Mindset</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
 
         <!-- Skills Section -->
-        <section id="skills" class="section">
-
-            <p class="section-label">SKILLS</p>
-
-            <h2>Tools I work with.</h2>
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-                    <h3>SQL</h3>
-                    <p>Querying, joins, aggregations and data analysis.</p>
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="text-center">
+                    <div class="section-label">
+                        <i class="fa-solid fa-code"></i> TECHNICAL STACK
+                    </div>
+                    <h2 class="section-title">Tools & Skills I work with.</h2>
+                    <p class="section-desc">
+                        A robust set of technical tools and methodologies for end-to-end data processing and visual storytelling.
+                    </p>
                 </div>
 
-                <div class="skill-card">
-                    <h3>Excel</h3>
-                    <p>Data cleaning, analysis, formulas and reporting.</p>
-                </div>
+                <div class="skills-grid fade-in">
+                    
+                    <!-- SQL -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div class="skill-title">
+                                <h3>SQL</h3>
+                                <span>Relational Databases</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Proficient in querying relational databases, aggregations, complex joins, CTEs, subqueries, and data extraction.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="tag">Joins & Subqueries</span>
+                            <span class="tag">Aggregations</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                    </div>
 
-                <div class="skill-card">
-                    <h3>Power BI</h3>
-                    <p>Interactive dashboards, KPIs and data visualization.</p>
-                </div>
+                    <!-- Excel -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper">
+                                <i class="fa-solid fa-file-excel"></i>
+                            </div>
+                            <div class="skill-title">
+                                <h3>Microsoft Excel</h3>
+                                <span>Spreadsheet Modeling</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Expertise in data cleaning, XLOOKUP/VLOOKUP, PivotTables, conditional formatting, and executive summary reports.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="tag">Data Cleaning</span>
+                            <span class="tag">Pivot Tables</span>
+                            <span class="tag">Formulas</span>
+                        </div>
+                    </div>
 
-                <div class="skill-card">
-                    <h3>Python</h3>
-                    <p>Data analysis, exploration and visualization.</p>
-                </div>
+                    <!-- Power BI -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper">
+                                <i class="fa-solid fa-chart-pie"></i>
+                            </div>
+                            <div class="skill-title">
+                                <h3>Power BI</h3>
+                                <span>Business Intelligence</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Building dynamic, interactive dashboards, KPI reporting, data modeling, DAX measures, and visual storytelling.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="tag">Dashboards</span>
+                            <span class="tag">DAX Measures</span>
+                            <span class="tag">Data Modeling</span>
+                        </div>
+                    </div>
 
+                    <!-- Python -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="skill-title">
+                                <h3>Python</h3>
+                                <span>Data Manipulation</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Exploratory Data Analysis (EDA), data wrangling, automation, and statistical visualization using Pandas and Seaborn.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="tag">Pandas & NumPy</span>
+                            <span class="tag">EDA</span>
+                            <span class="tag">Visualization</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
         </section>
-
 
         <!-- Projects Section -->
-        <section id="projects" class="section">
-
-            <p class="section-label">SELECTED WORK</p>
-
-            <h2>Projects that turn data into insights.</h2>
-
-            <div class="projects-grid">
-
-                <article class="project-card">
-                    <p class="project-tool">PYTHON · POWER BI</p>
-
-                    <h3>Retail Business Performance Analysis</h3>
-
-                    <p>
-                        Analyzed retail business data to uncover trends,
-                        performance patterns and actionable insights.
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="text-center">
+                    <div class="section-label">
+                        <i class="fa-solid fa-laptop-code"></i> SELECTED WORK
+                    </div>
+                    <h2 class="section-title">Projects that turn data into insights.</h2>
+                    <p class="section-desc">
+                        Explore practical analytics projects covering sales performance, financial modeling, relational database querying, and visual dashboards.
                     </p>
 
-                    <a href="https://github.com/lawalmary441-tech/Retail-Business-Performance-Analysis"
-                       target="_blank">
-                        View Project →
-                    </a>
-                </article>
+                    <!-- Filter Buttons -->
+                    <div class="filter-bar">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="powerbi">Power BI</button>
+                        <button class="filter-btn" data-filter="sql">SQL</button>
+                        <button class="filter-btn" data-filter="python">Python</button>
+                    </div>
+                </div>
 
+                <div class="projects-grid fade-in">
 
-                <article class="project-card">
-                    <p class="project-tool">POWER BI</p>
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="python powerbi">
+                        <div class="project-meta">
+                            <div class="project-tools">
+                                <span class="tool-badge">Python</span>
+                                <span class="tool-badge">Power BI</span>
+                            </div>
+                        </div>
+                        <h3>Retail Business Performance Analysis</h3>
+                        <p>
+                            Comprehensive analysis of retail sales data to identify seasonal trends, customer purchasing patterns, and profitability metrics across store categories.
+                        </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/lawalmary441-tech/Retail-Business-Performance-Analysis" target="_blank" class="project-link">
+                                View Project Repository <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
 
-                    <h3>Financial Sales Dashboard</h3>
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="powerbi">
+                        <div class="project-meta">
+                            <div class="project-tools">
+                                <span class="tool-badge">Power BI</span>
+                            </div>
+                        </div>
+                        <h3>Financial Sales Dashboard</h3>
+                        <p>
+                            Interactive financial dashboard tracking sales performance, gross profit margins, revenue growth rates, and regional business insights.
+                        </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/lawalmary441-tech/PowerBi-financial-sales-dashboard" target="_blank" class="project-link">
+                                View Project Repository <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
 
-                    <p>
-                        Built an interactive dashboard to explore sales,
-                        profit and business performance across different
-                        dimensions.
-                    </p>
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="sql">
+                        <div class="project-meta">
+                            <div class="project-tools">
+                                <span class="tool-badge">SQL</span>
+                            </div>
+                        </div>
+                        <h3>Northwind SQL Data Analysis</h3>
+                        <p>
+                            In-depth SQL analysis using complex table joins, aggregate functions, and window functions to evaluate order fulfillment, employee efficiency, and sales by category.
+                        </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/lawalmary441-tech/TASK-4-SQL-DATA-ANALYSIS-NORTHWIND" target="_blank" class="project-link">
+                                View Project Repository <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
 
-                    <a href="https://github.com/lawalmary441-tech/PowerBi-financial-sales-dashboard"
-                       target="_blank">
-                        View Project →
-                    </a>
-                </article>
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="python sql">
+                        <div class="project-meta">
+                            <div class="project-tools">
+                                <span class="tool-badge">Python</span>
+                                <span class="tool-badge">SQLite</span>
+                            </div>
+                        </div>
+                        <h3>SQLite + Python Sales Analysis</h3>
+                        <p>
+                            Integrated relational database querying with Python scripts to extract customer data, clean missing attributes, and output clean analytical summaries.
+                        </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/lawalmary441-tech/task-7-sqlite-python" target="_blank" class="project-link">
+                                View Project Repository <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
 
+                    <!-- Project 5 -->
+                    <article class="project-card" data-category="powerbi">
+                        <div class="project-meta">
+                            <div class="project-tools">
+                                <span class="tool-badge">Power BI</span>
+                            </div>
+                        </div>
+                        <h3>Sales Dashboard</h3>
+                        <p>
+                            Executive dashboard highlighting key performance indicators (KPIs), category breakdowns, and time-series sales tracking for strategic management review.
+                        </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/lawalmary441-tech/Task-8-Sales-Dashboard" target="_blank" class="project-link">
+                                View Project Repository <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
 
-                <article class="project-card">
-                    <p class="project-tool">SQL</p>
-
-                    <h3>Northwind SQL Data Analysis</h3>
-
-                    <p>
-                        Used SQL queries, joins, aggregations and other
-                        techniques to analyze relational sales data.
-                    </p>
-
-                    <a href="https://github.com/lawalmary441-tech/TASK-4-SQL-DATA-ANALYSIS-NORTHWIND"
-                       target="_blank">
-                        View Project →
-                    </a>
-                </article>
-
-
-                <article class="project-card">
-                    <p class="project-tool">PYTHON · SQLITE</p>
-
-                    <h3>SQLite + Python Sales Analysis</h3>
-
-                    <p>
-                        Combined database querying and Python analysis to
-                        explore sales data and communicate findings.
-                    </p>
-
-                    <a href="https://github.com/lawalmary441-tech/task-7-sqlite-python"
-                       target="_blank">
-                        View Project →
-                    </a>
-                </article>
-
-
-                <article class="project-card">
-                    <p class="project-tool">POWER BI</p>
-
-                    <h3>Sales Dashboard</h3>
-
-                    <p>
-                        Created an interactive sales dashboard for exploring
-                        performance across key business categories.
-                    </p>
-
-                    <a href="https://github.com/lawalmary441-tech/Task-8-Sales-Dashboard"
-                       target="_blank">
-                        View Project →
-                    </a>
-                </article>
-
+                </div>
             </div>
-
         </section>
-
 
         <!-- Experience Section -->
-        <section id="experience" class="section">
-
-            <p class="section-label">EXPERIENCE</p>
-
-            <h2>Professional experience.</h2>
-
-            <div class="experience-item">
-
-                <div>
-                    <h3>Data Analyst Intern</h3>
-                    <p class="company">DataX Labs</p>
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="text-center">
+                    <div class="section-label">
+                        <i class="fa-solid fa-briefcase"></i> EXPERIENCE
+                    </div>
+                    <h2 class="section-title">Professional Experience.</h2>
+                    <p class="section-desc">
+                        Hands-on workplace experience applying data analytics, process monitoring, and problem solving.
+                    </p>
                 </div>
 
-                <p class="date">July 2026 — Present</p>
+                <div class="timeline fade-in">
+                    
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>Data Analyst Intern</h3>
+                                    <div class="company-name"><i class="fa-solid fa-building"></i> DataX Labs</div>
+                                </div>
+                                <span class="timeline-date">July 2026 — Present</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Collaborating on practical data analytics projects using SQL, Python, and Power BI. Performing data cleaning, 
+                                exploratory analysis, dataset transformations, and producing visual reporting dashboards to deliver actionable insights.
+                            </p>
+                        </div>
+                    </div>
 
-                <p>
-                    Working on practical data analytics projects involving
-                    data analysis, SQL, Python, visualization and
-                    problem-solving.
-                </p>
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>Intern</h3>
+                                    <div class="company-name"><i class="fa-solid fa-utensils"></i> Big J Foods</div>
+                                </div>
+                                <span class="timeline-date">Past Experience</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Gained workplace operational experience in production workflow evaluation, quality tracking, 
+                                and process monitoring, strengthening attention to operational standards and data accuracy.
+                            </p>
+                        </div>
+                    </div>
 
-            </div>
-
-
-            <div class="experience-item">
-
-                <div>
-                    <h3>Intern</h3>
-                    <p class="company">Big J Foods</p>
                 </div>
-
-                <p>
-                    Gained practical workplace experience through an
-                    internship involving food production and operational
-                    processes.
-                </p>
-
             </div>
-
         </section>
-
 
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper fade-in">
+                    <div class="section-label" style="background: rgba(255,255,255,0.15); color: #ffffff;">
+                        <i class="fa-solid fa-paper-plane"></i> LET'S CONNECT
+                    </div>
+                    <h2>Have a dataset or problem worth exploring?</h2>
+                    <p>
+                        I am open to full-time Data Analyst roles, freelance projects, and collaborations. 
+                        Let's connect and turn your data into actionable value.
+                    </p>
 
-            <p class="section-label">LET'S CONNECT</p>
+                    <div class="contact-actions">
+                        <a href="mailto:lawalmary441@gmail.com" class="btn btn-primary">
+                            <i class="fa-solid fa-envelope"></i> Send Email
+                        </a>
 
-            <h2>Have a dataset or a problem worth exploring?</h2>
+                        <button id="copy-email-btn" class="btn btn-secondary">
+                            <i class="fa-solid fa-copy"></i> Copy Email
+                        </button>
 
-            <p>
-                I'm open to Data Analyst opportunities, collaborations and
-                meaningful projects where data can create value.
-            </p>
+                        <a href="Lawal%20Mary%20Data%20Analyst%20CV.pdf" target="_blank" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.3);">
+                            <i class="fa-solid fa-file-pdf"></i> View Resume
+                        </a>
+                    </div>
 
-            <div class="contact-links">
-
-                <a href="mailto:lawalmary441@gmail.com">
-                    Email Me
-                </a>
-
-                <a href="https://github.com/lawalmary441-tech"
-                   target="_blank">
-                    GitHub
-                </a>
-
-                <a href="https://www.linkedin.com/in/mary-lawal-b7704826a/"
-                   target="_blank">
-                    LinkedIn
-                </a>
-
+                    <div class="contact-socials">
+                        <a href="mailto:lawalmary441@gmail.com" class="social-link" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/lawalmary441-tech" target="_blank" class="social-link" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mary-lawal-b7704826a/" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-
         </section>
 
     </main>
 
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span class="toast-msg">Email copied to clipboard!</span>
+    </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Lawal Mary Motunrayo. Built with purpose and data.</p>
+        <div class="footer-content">
+            <p>© 2026 Lawal Mary Motunrayo. Built with purpose & data.</p>
+            <button id="back-to-top" class="back-to-top" title="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
     </footer>
 
+    <!-- Interactive Script -->
+    <script src="script.js"></script>
 </body>
 </html>
